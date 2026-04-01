@@ -18,18 +18,12 @@ export default function Home() {
           className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.04] via-transparent to-violet-600/[0.05]"
         />
         <div className="relative mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 sm:flex-row sm:items-end sm:justify-between sm:px-6 sm:py-10 lg:px-8">
-          <div className="max-w-2xl space-y-3">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-indigo-600/90">
-              Lecture archive
-            </p>
+          <div className="max-w-2xl">
             <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
               <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">
-                講義動画アーカイブ
+                ハワイ大学コンサルタント動画
               </span>
             </h1>
-            <p className="max-w-lg text-sm leading-relaxed text-slate-600">
-              コース別の録画を一覧から選択。再生は Vimeo のプレイヤーで行われます。
-            </p>
           </div>
           <div className="flex shrink-0 items-center gap-3 sm:flex-col sm:items-end sm:gap-2">
             <span className="inline-flex items-center rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-xs font-medium tabular-nums text-slate-600 shadow-sm shadow-slate-900/5 backdrop-blur-sm">

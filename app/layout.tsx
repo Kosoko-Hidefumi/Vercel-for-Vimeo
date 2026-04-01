@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "講義動画アーカイブ | Vimeo ギャラリー",
-  description: "Vimeo 埋め込みによる動画一覧ポータル",
+  title: "ハワイ大学コンサルタント動画",
+  description: "ハワイ大学コンサルタント動画（Vimeo 埋め込み）",
 };
 
 export default function RootLayout({
