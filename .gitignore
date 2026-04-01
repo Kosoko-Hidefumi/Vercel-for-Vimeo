@@ -36,5 +36,8 @@ yarn-error.log*
 # vercel
 .vercel
 
+# fetched CSV for Vercel prebuild
+.cache
+
 # typescript
 *.tsbuildinfo

@@ -1,0 +1,22 @@
+# Zoom-to-Vimeo リポジトリ用: このファイルを
+#   .github/workflows/trigger-vercel-gallery-deploy.yml
+# としてコピーし、リポジトリの Secrets に次を追加してください:
+#   VERCEL_DEPLOY_HOOK_URL … Vercel ダッシュボードの Deploy Hook URL
+#
+# 参照: https://vercel.com/docs/deploy-hooks
+
+name: Trigger Vercel gallery deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "vimeo_metadata_export.csv"
+
+jobs:
+  deploy-hook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel production deploy
+        run: |
+          curl -fsS -X POST "$VERCEL_DEPLOY_HOOK_URL" -d ''
